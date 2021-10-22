@@ -54,6 +54,7 @@ async def handler(websocket, _):
 
 
 if __name__ == '__main__':
+    print("Sent!")
     if config.SSL_KEY:
         ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
         ssl_context.load_cert_chain(config.SSL_CHAIN, config.SSL_KEY)
