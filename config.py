@@ -3,7 +3,7 @@ f = requests.get("http://ifconfig.me/ip").text
 print(f)
 
 IP = f'{f}'
-PORT = 7000
+PORT = os.environ.get('PORTCH')
 
 SALT = 'SaltySaltySalt1'  # ur salt
 
