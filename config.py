@@ -1,4 +1,5 @@
 import requests
+import os
 f = requests.get("http://ifconfig.me/ip").text
 print(f)
 
